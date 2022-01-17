@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+nav {
+    float:left;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #045D8B;
+    }
+    
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      #main-menu > li {
+        float: left;
+        position: relative;
+      }
+      
+      #main-menu > li > p {
+        color:aliceblue; 
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display: block;
+        padding: 14px 100px;
+        line-height: 5px;
+        border-right: 1px solid #045D8B;
+        text-shadow: 1px 1px 1px #045D8B;
+      }
+      #main-menu > li > a {
+        color:aliceblue; 
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display: block;
+        padding: 14px 100px;
+        text-shadow: 1px 1px 1px #045D8B;
+      }
+      
+      #main-menu > li:nth-child(1) > a {
+        border-left: 1px solid #045D8B;
+      }
+      
+      #sub-menu {
+        position: absolute;
+        background: #CFDAFF;
+        opacity: 0;
+        width: 178px;
+        height:564px;
+        top: 60px;
+        visibility: hidden;
+        transition: all 0.15s ease-in;
+      }
+      
+      #sub-menu > li {
+        padding: 16px 28px;
+        border-bottom: 1px solid #045D8B;
+      }
+      
+      #sub-menu > li >  a {
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      
+      #main-menu > li:hover #sub-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      #sub-menu > li >  a:hover {
+       text-decoration: underline;
+      }
+      .page{
+        margin-top:100px;
+    }
+    .board{
+      position: absolute;
+      width: 350px;
+      height: 359px;
+      left: 75px;
+      top: 146px;
+      border: 1px solid #045D8B;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    .form_text_alert_padding{
+      padding-bottom: 10px;
+    }
+    
+    .form_input{
+      width: 98%; 
+      height: 30px; 
+      border: 1px solid; 
+      border-radius: 3px; 
+      border-color: gray;
+    }
