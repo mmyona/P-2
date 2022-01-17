@@ -1,7 +1,6 @@
 import Home from "./pages/home.js";
 import Posts from "./pages/posts.js";
 import Header from "./pages/header.js";
-import Header from "./pages/nav.js";
 import makeMoveButton from "./pages/btn.js";
 
 const state={
@@ -11,16 +10,15 @@ const root=document.querySelector('#root');
 
 Header(header);
 makeMoveButton(root, state, 'login');
-makeMoveButton(root, state, 'menu');
 
 const router = async () => {
     const routes = [
         { path: "/", view: Home },
-        { path:"/menu", view:Nav},
-        { path: "/board1", view: Posts },
-        { path: "/board2", view: Posts },
-        { path: "/board3", view: Posts },
-        { path: "/board4", view: Posts },
+        { path:"/자유", view:Posts},
+        { path: "/비밀", view: Posts },
+        { path: "/정보", view: Posts },
+        { path: "/홍보", view: Posts },
+        { path: "/SW", view: Posts },
     ];
 
     const pageMatches = routes.map((route) => {
