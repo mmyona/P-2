@@ -1,29 +1,6 @@
 {
-  "name": "p-2",
-  "version": "1.0.0",
-  "description": "<div align=center>",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mmyona/P-2.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mmyona/P-2/issues"
-  },
-  "homepage": "https://github.com/mmyona/P-2#readme",
-  "dependencies": {
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15"
-  },
-  "devDependencies": {
-    "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.3"
+    "start": "webpack-dev-server",
+    "build": "webpack --mode=production"
   }
 }
