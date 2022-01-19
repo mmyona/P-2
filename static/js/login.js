@@ -1,33 +1,3 @@
-export default class {
-    constructor() {
-        document.title = "Login";
-    }
-    async getHtml() {
-        return `
-    <div class="page">
-{{!--login--}}
-    <form name="login_form" action="/cookie" method="get">
-        <div><input type="text" name="username" placeholder="ID" class="form_input" style="width:100px;"> </div>
-        <div class="form_text_alert_padding">
-            <div id="alert_username" class="form_text_alert"></div>
-        </div>
-
-        <div><input type="password" name="password" placeholder="password" class="form_input" style="width:100px;"> </div>
-        <button type="button" class="form_submit_button" onclick="login()">로그인</button>
-        <div class="form_text_alert_padding">
-            <div id="alert_password" class="form_text_alert"></div>
-        </div>
-    </form>
-
- {{!--signup--}}   
-    <a href="/signup" class="history" data-link><button onclick='location.href="/signup"'>회원가입</button>
-    </ul>
-    </div>
-        `;
-    }
-}
-
-//logn 유효성 검사
 function login() {
     const form = document.login_form;
     const chkUsername = checkValidUsername(form);

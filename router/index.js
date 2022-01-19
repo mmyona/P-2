@@ -1,0 +1,24 @@
+// css
+require('../static/css/style.css')
+
+// router
+const {
+  initialRoutes,
+  historyRouterPush
+} = require('./router')
+
+const historyAppDiv = document.querySelector('#history-app')
+
+// Browser History
+initialRoutes('history', historyAppDiv)
+
+window.onload = () => {
+  const historyLinker = document.querySelectorAll('span.history')
+  historyLinker.forEach(el => {
+    el.addEventListener('click', (evt) => {
+      const pathName = evt.target.getAttribute('route')
+      historyRouterPush(pathName, historyAppDiv)
+    })
+  })
+}
+
