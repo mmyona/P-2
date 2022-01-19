@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatting</title>
+  <link rel="stylesheet" href="../css/chat.css">
+
+  <img class="background" src="./imgs/background.png">  
+  <div class="container">
+    <div class="header">
+      <button class="back-btn">
+        <img src="./imgs/left-arrow.png" width="30" height="30">  
+      </button>
+      <img class="profile-pic" src="./imgs/profile.png" width="40" height="40">
+      <div class="info-block">
+        <p class="username">우만동 부동산</p>
+        <p class="status">H.p 010-8931-4993</p>
+      </div>
+      <div class="call-box">
+        <button>
+          <img src="./imgs/phone-call.png" width="20" height="20">
+        </button>
+        <button>
+          <img src="./imgs/video-call.png" width="20" height="20">
+        </button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <textarea id="input" placeholder="메시지를 입력해주세요." autofocus="true"></textarea>
+      <button id="send">
+        <img src="./imgs/send.png" width="24" height="24">  
+      </button>
+    </div>
+  </div>
+  <script src="../js/chat.js"></script>
+{{#partial "js"}}
+</body>
+</html>
