@@ -1,6 +1,24 @@
 {
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --mode development",
     "build": "webpack --mode=production"
-  }
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2"
+  },
+  "name": "p-2",
+  "description": "<div align=center>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmyona/P-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmyona/P-2/issues"
+  },
+  "homepage": "https://github.com/mmyona/P-2#readme"
 }
