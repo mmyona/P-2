@@ -2,16 +2,25 @@
 const chatTemplate = require('./static/pages/chat.hbs')
 const homeTemplate = require('./static/pages/home.hbs')
 const loginTemplate = require('./static/pages/login.hbs')
+const loca1Template = require('./static/pages/loca_1.hbs')
+const loca2Template = require('./static/pages/loca_2.hbs')
+const loca3Template = require('./static/pages/loca_3.hbs')
 
 const chat = chatTemplate()
 const Home = homeTemplate()
+const loca1 = loca1Template()
+const loca2 = loca2Template()
+const loca3 = loca3Template()
 const login = loginTemplate()
 
 const routes = {
   '/': Home,
   '/home': Home,
   '/login': login,
-  '/chat' : chat
+  '/chat' : chat,
+  '/loca1':loca1,
+  '/loca2':loca2,
+  '/loca3':loca3
 }
 
 //sql 연결 라우터

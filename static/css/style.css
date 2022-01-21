@@ -107,7 +107,10 @@ nav {
       border-radius: 3px; 
       border-color: gray;
     }
-.chat{
+.container{
     margin-top:100px;
     margin-left:500px;
+}
+.chat{
+  margin:200px;
 }
