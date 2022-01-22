@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./static/css/style.css" />
-        <link rel="stylesheet" href="./static/css/chat.css" />
         <title>아주대 직방</title>
     </head>
     <body>
@@ -25,40 +24,36 @@
                 </ul>
         </nav>
 
-<div class="chat">
-    <img class="background" src="imgs/background.png"/>  
-  <div class="container">
-    <div class="header">
-      <button class="back-btn">
-        <img src="./imgs/left-arrow.png" width="30" height="30"/>  
-      </button>
-
-      <img class="profile-pic" src="imgs/profile.png" width="40" height="40"/>
-      <div class="info-block">
-        <p class="username">우만동 부동산</p>
-        <p class="status">H.P 010-8931-4993</p>
-      </div>
-
-      <div class="call-box">
-        <button>
-          <img src="/imgs/phone-call.png" width="20" height="20"/>
+<div class="chat"> 
+    <div class="container">
+        <div class="header">
+        <button class="back-btn">
+            <img src="./imgs/left-arrow.png" width="30" height="30"/>  
         </button>
-        <button>
-          <img src="/imgs/video-call.png" width="20" height="20"/>
+        <img class="profile-pic" src="./imgs/profile.png" width="40" height="40"/>
+        <div class="info-block">
+            <p class="username">우만동 부동산</p>
+            <p class="status">H.P 010-8931-4993</p>
+        </div>
+        <div class="call-box">
+            <button>
+            <img src="./imgs/phone-call.png" width="20" height="20"/>
+            </button>
+            <button>
+            <img src="./imgs/video-call.png" width="20" height="20"/>
+            </button>
+        </div>
+        </div>
+        <div class="footer">
+        <textarea id="input" placeholder="메시지를 입력해주세요." autofocus="true"></textarea>
+        <button id="send">
+            <img src="./imgs/send.png" width="24" height="24"/>  
         </button>
-      </div>
-
+        </div>
     </div>
-    <div class="footer">
-      <textarea id="input" placeholder="메시지를 입력해주세요." autofocus="true"></textarea>
-      <button id="send">
-        <img src="imgs/send.png" width="24" height="24"/>  
-      </button>
-    </div>
-  </div>
 </div>
 
-    <div class="container">
+    <div class="container_pick">
         <span class="container_text">아주대 직방</span>
         <select name="location" id="location">
             <option id ="selection_selected" value="" disabled selected hidden>위치를 선택해주세요</option>
@@ -67,8 +62,9 @@
             <option value="원천동">원천동</option>
         </select>
     </div>
-        <div id="history-app"></div>
-    <script src="static/js/chat.js"></script>
-    <script src="static/js/login.js"></script>
+
+    <div id="history-app"></div>
+    
+    <script type="text/javascript" src="./static/js/chat.js"></script>
     </body>
 </html>
