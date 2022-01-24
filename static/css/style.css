@@ -32,6 +32,18 @@ nav {
         border-right: 1px solid #045D8B;
         text-shadow: 1px 1px 1px #045D8B;
       }
+
+      #main-menu > li > span {
+        color:aliceblue; 
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display: block;
+        padding: 14px 100px;
+        line-height: 5px;
+        border-right: 1px solid #045D8B;
+        text-shadow: 1px 1px 1px #045D8B;
+      }
       #main-menu > li > a {
         color:aliceblue; 
         text-align: center;

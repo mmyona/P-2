@@ -30,7 +30,7 @@ module.exports = {
     rules: [
       {
         test: /\.hbs$/,
-        loader: 'handlebars-loader'
+        use: [MiniCssExtractPlugin.loader, 'handlebars-loader']
       },
       {
         test: /\.css$/,
@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         test: /\.png/, 
-        loader: 'url-loader'
+        use: [MiniCssExtractPlugin.loader, 'url-loader']
       }
     ]
   }
