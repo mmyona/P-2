@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+/*상단바 css*/
 nav {
     float:left;
     position: absolute;
@@ -124,6 +124,7 @@ nav {
     margin-left:500px;
 }
 
+/*채팅 페이지 css*/
 button {
     border: none;
     background-color: transparent;

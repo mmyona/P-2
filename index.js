@@ -1,5 +1,5 @@
 // css
-require('./static/css/style.css')
+require('./css/style.css')
 
 // router
 const {

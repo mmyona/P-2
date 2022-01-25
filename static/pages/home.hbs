@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
 <body>
@@ -13,11 +13,12 @@
             <span class="container_text">아주대 직방</span>
             <select name="location" id="location" onchange="chageSelect();">
                 <option id ="selection_selected" value="" disabled selected hidden>위치를 선택해주세요</option>
-                <option value="광교" onclick='location.href="/loca1"'>광교</option>
-                <option value="우만동" onclick='location.href="/loca2"'>우만동</option>
-                <option value="원천동" onclick='location.href="/loca3"'>원천동</option>
+                <option value="광교">광교</option>
+                <option value="우만동">우만동</option>
+                <option value="원천동">원천동</option>
             </select>
         </div>
+       <button class="btn" route="/chat">채팅 걸기</button></span>
     </div>
 
     <script src="../../router.js"></script>
@@ -26,18 +27,18 @@
 </html>
 
 <script type="text/javascript">  
-function chageSelect(){  
-    var langSelect = $("#location");  
-    // select element에서 선택된 option의 value가 저장된다.  
-    var selectValue = langSelect.options[langSelect.selectedIndex].value;   
-    // select element에서 선택된 option의 text가 저장된다.  
-    var selectText = langSelect.options[langSelect.selectedIndex].text;  
-    if(selectText=="광교"){
-        location.href="./loca1.hbs";
-    }else if(selectText=="우만동"){
-        location.href="/loca2";
-    }else if(selectText=="원천동"){
-        location.href="/loca3";
-    }
-}  
+    function chageSelect(){  
+        var langSelect = $("#location");  
+        // select element에서 선택된 option의 value가 저장된다.  
+        var selectValue = langSelect.options[langSelect.selectedIndex].value;   
+        // select element에서 선택된 option의 text가 저장된다.  
+        var selectText = langSelect.options[langSelect.selectedIndex].text;  
+        if(selectText=="광교"){
+            location.href="./loca1.hbs";
+        }else if(selectText=="우만동"){
+            location.href="/loca2";
+        }else if(selectText=="원천동"){
+            location.href="/loca3";
+        }
+    }  
 </script>  

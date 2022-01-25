@@ -1,4 +1,3 @@
-const chat=require('../pages/chat.hbs');
 const chatBox = chat.querySelector('#chat-box');
 const input = chat.querySelector('#input');
 const send = chat.querySelector('#send');

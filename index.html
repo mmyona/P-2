@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./static/css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <title>아주대 직방</title>
     </head>
     <body>
@@ -25,8 +25,21 @@
                 </ul>
         </nav>
 
+        <div class="page">
+            <!--지역 선택-->
+                <div class="container_pick">
+                    <span class="container_text">아주대 직방</span>
+                    <select name="location" id="location">
+                        <option id ="selection_selected" value="" disabled selected hidden>위치를 선택해주세요</option>
+                        <option value="광교">광교</option>
+                        <option value="우만동">우만동</option>
+                        <option value="원천동">원천동</option>
+                    </select>
+                </div>
+               <button class="btn" route="/chat">채팅 걸기</button></span>
+        </div>
+
 <!--app-->
     <div id="history-app"></div>
-
     </body>
 </html>
